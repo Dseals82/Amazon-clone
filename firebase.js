@@ -1,22 +1,13 @@
- 
- // Initialize Cloud Firestore through Firebase
-firebase.initializeApp({
-    apiKey: 'AIzaSyAibnHF5hdONQvRqmZKQACVqYcRPA5f5eA',
-    authDomain: 'fir-4e173.firebaseapp.com',
-    projectId: 'fir-4e173'
-  });
-  
-  var db = firebase.firestore();
- // Your web app's Firebase configuration
+  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyAibnHF5hdONQvRqmZKQACVqYcRPA5f5eA",
-    authDomain: "fir-4e173.firebaseapp.com",
-    projectId: "fir-4e173",
-    storageBucket: "fir-4e173.appspot.com",
-    messagingSenderId: "628670898977",
-    appId: "1:628670898977:web:5bb485ba247526e2771460",
-    measurementId: "G-PSTK7MC1D8"
+    apiKey: "AIzaSyCK1TJI7tn5yocEa7v4HaSg3O0VsL7AiYE",
+    authDomain: "db-efba7.firebaseapp.com",
+    projectId: "db-efba7",
+    storageBucket: "db-efba7.appspot.com",
+    messagingSenderId: "183832185733",
+    appId: "1:183832185733:web:3e64f1e017edcc0e41d2ec",
+    measurementId: "G-8JK1Q0TB7W"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
