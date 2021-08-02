@@ -17,9 +17,33 @@ function getItems(){
 };
 
 function generateItems(items){
+    let itemsHTML = "";
     items.forEach((item)=>{
-
-    })
+        itemsHTML += `
+        <div class="main-product">
+        <div class="product-image w-48 h-52 bg-white rounded-lg p-4">
+            
+            <img class=" w-full h-full object-contain" src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="product-name text-gray-700 font-bold mt-2 text-sm">
+            ${item.name}
+        </div>
+        <div class="product-make text-green-700 font-bold ">
+            ${item.make}
+        </div>
+        <div class="product-rating text-yellow-300 font-bold my-1">
+            ⭐⭐⭐⭐⭐ ${item.rating}
+        </div>
+        <div class="product-price font-bold text-gray-700 text-lg">
+            $${item.price}
+        </div>
+        <div class="add-to-cart h-8 w-28 bg-yellow-500 flex items-center justify-center text-white rounded text-md cursor-pointer hover:bg-yellow-600">
+            Add to cart
+        </div>
+    </div>
+        `
+    });
+    document.querySelector(".main-section-products").innerHTML = itemsHTML;
 };
 
 getItems();
